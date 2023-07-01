@@ -5,7 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Header } from '../components/Header';
 import { Tab1Screen } from './Tab1Screen';
 import { Tab2Screen } from './Tab2Screen';
-import { Loading } from '../components/Loading';
+import { QuestionScreen } from './QuestionScreen';
 
 
 
@@ -50,8 +50,9 @@ export function Home() {
         }}
     
         >
-      <Tab.Screen name="Tab1" component={Tab1Screen} />
-      <Tab.Screen name="Tab2" component={Tab2Screen} />
+      <Tab.Screen name="Question" component={QuestionScreen} />
+      <Tab.Screen name="Stats" component={Tab1Screen} />
+      <Tab.Screen name="Explanation" component={Tab2Screen} />
     </Tab.Navigator>
       
     </View>
